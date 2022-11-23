@@ -107,7 +107,13 @@ namespace exercise_3
                                     Console.WriteLine("\nName: " + curr.name);
                                 }
                             }
-                            break ;
+                            break;
+                        case '3':
+                            {
+                                obj.firstNode();
+                            }
+                            break;
+
                     }
                 }
             }
