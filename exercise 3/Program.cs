@@ -34,5 +34,12 @@ namespace exercise_3
             else
                 return (false);/*returns true if the node is present at the end*/
         }
+        public bool listEmpty()
+        {
+            if (LAST == null)
+                return true;
+            else
+                return false;
+        }
     }
 }
