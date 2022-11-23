@@ -81,6 +81,13 @@ namespace exercise_3
                     Console.Write("\nEnter your choice (1-4): ");
                     char ch = Convert.ToChar(Console.ReadLine());
                     switch (ch)
+                    {
+                        case '1':
+                            {
+                                obj.traverse();
+                            }
+                            break;
+                    }
                 }
             }
         }
