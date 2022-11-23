@@ -76,7 +76,8 @@ namespace exercise_3
 
         public bool Search(int rollNo, ref Node previous, ref Node current)/*Searches for the specified node*/
         {
-            for(previous = current = LAST.next; current != LAST; previous = current, current = current.next)
+            for (previous = current = LAST; current != null &&
+                 rollNo != current.rollNumber; previous = current, current = current.next)
             {
                 if(rollNo == current.rollNumber)
                     return (true);/*returns true if the node is found*/
